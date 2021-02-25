@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { TextInputProps, StyleProp, TextStyle, ViewStyle } from "react-native";
+import { TextInputProps, StyleProp, TextStyle, ViewStyle, TextInput } from "react-native";
 import {
   CountryCode,
   CallingCode,
@@ -30,6 +30,7 @@ export interface PhoneInputProps {
   layout?: "first" | "second";
   filterProps?: CountryFilterProps;
   countryPickerProps?: any;
+  textInputRef?: React.RefObject<TextInput>
 }
 export interface PhoneInputState {
   code: CallingCode | undefined;
