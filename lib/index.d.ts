@@ -30,7 +30,7 @@ export interface PhoneInputProps {
   layout?: "first" | "second";
   filterProps?: CountryFilterProps;
   countryPickerProps?: any;
-  textInputRef?: React.RefObject<TextInput>
+  textInputRef?: React.RefObject<TextInput>;
 }
 export interface PhoneInputState {
   code: CallingCode | undefined;
